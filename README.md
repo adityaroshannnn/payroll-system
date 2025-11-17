@@ -1,21 +1,82 @@
-# Payroll System (JSP/Servlet + MySQL)
+# 🧾 Payroll System  
+A complete Payroll Management System built using **Java (JSP + Servlets)**, **MySQL**, and **JDBC**, designed with a clean and modern UI.  
+This system is suitable for college projects, minor projects, or real-world payroll automation.
 
-Minimal payroll app with Admin and Employee roles.
+---
 
-## Features
-- Admin: login, view employees, add employee (+ optional login), remove employee, create payslips
-- Employee: login, mark attendance (Present/Absent for today), view payslips
-- Secure password hashing (SHA-256)
-- Simple JDBC DAO layer
-- Maven build, WAR deployable to Apache Tomcat 9/10
+## 🚀 Features
 
-## Quick Start
+### 👨‍💼 Admin Features
+- Login (secure login using SHA-256 hashing)
+- Add Employee  
+- Remove Employee  
+- Create Employee Payslips  
+- View All Employees  
+- View Attendance Records of Employees  
+- View Employee Payslips  
+- Futuristic UI Dashboard with interactive buttons  
+- Logout Session Management  
 
-### 1) Requirements
-- JDK 8+
-- Maven 3+
-- MySQL 8+
-- Apache Tomcat 9 or 10
+### 👨‍💻 Employee Features
+- Login  
+- Mark Daily Attendance (Present/Absent)  
+- View Own Payslips  
+- Modern and clean Employee Dashboard  
+- Profile section (optional future update)  
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- JSP (Java Server Pages)  
+- HTML5, CSS3 (glassmorphism + modern UI)  
+- JSTL (Java Standard Tag Library)  
+
+### Backend
+- Java 8+  
+- Servlets  
+- JDBC  
+- DAO Layer  
+
+### Database
+- MySQL 8+  
+- Tables:
+  - `users`  
+  - `employees`  
+  - `attendance`  
+  - `payslips`  
+
+### Server
+- Apache Tomcat 9.x  
+
+### Build Tool
+- Maven  
+
+---
+
+## 📂 Project Structure
+
+payroll-system/
+├── src/main/java/
+│ └── com.payroll.* (DAO, Models, Servlets)
+│
+├── src/main/webapp/
+│ ├── assets/css/style.css
+│ ├── jsp/
+│ │ ├── login.jsp
+│ │ ├── admin-dashboard.jsp
+│ │ ├── add-employee.jsp
+│ │ ├── create-payslip.jsp
+│ │ ├── employee-dashboard.jsp
+│ │ ├── attendance-list.jsp
+│ │ ├── payslips.jsp
+│ │ ├── header.jsp
+│ │ └── footer.jsp
+│ └── WEB-INF/web.xml
+│
+├── pom.xml
+└── README.md
 
 ### 2) Database
 - Edit `src/main/resources/db.properties` if needed.
@@ -103,3 +164,9 @@ mvn clean package
 - If you see DB connection errors, verify MySQL credentials and that the DB exists.
 - On Windows, ensure MySQL service is running.
 - For Tomcat 10 (Jakarta namespace), this app targets Servlet 4.0 (javax.*). Use Tomcat 9.x or enable compatibility mode; or adjust imports to `jakarta.servlet.*` and set servlet-api accordingly.
+
+  
+👤 Author
+
+Aditya Roshan Pradhan
+Designed & developed with a full futuristic UI.
