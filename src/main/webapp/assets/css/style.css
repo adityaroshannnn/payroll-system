@@ -1,0 +1,182 @@
+/* ---------------------- FUTURISTIC PAYROLL SYSTEM UI ---------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #101729, #1a233a);
+  color: #e4e6eb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* ---------------------- NAVBAR ---------------------- */
+.topnav {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.topnav span {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #00b4d8;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: #e4e6eb;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.topnav a:hover {
+  background: #00b4d8;
+  color: #fff;
+}
+
+/* ---------------------- CARD ---------------------- */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.card h2, h3 {
+  color: #00b4d8;
+}
+
+/* ---------------------- TABLE ---------------------- */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.table th {
+  background: #00b4d8;
+  color: #fff;
+  text-align: left;
+  padding: 12px;
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table tr:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ---------------------- BUTTONS ---------------------- */
+.btn {
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  border: none;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #0096c7, #023e8a);
+}
+
+/* Red danger button */
+.btn-danger {
+  background: linear-gradient(135deg, #d62828, #9d0208);
+}
+
+.btn-danger:hover {
+  background: linear-gradient(135deg, #f94144, #ba181b);
+}
+
+/* ---------------------- INPUT FIELDS ---------------------- */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #e4e6eb;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  box-shadow: 0 0 6px #00b4d8;
+}
+
+/* ---------------------- FOOTER ---------------------- */
+.footer {
+  margin-top: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  color: #aab4c2;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* ---------------------- LOGIN PAGE ---------------------- */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.login-box {
+  width: 350px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.login-box h2 {
+  color: #00b4d8;
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  margin-top: 10px;
+}
+
+.alert {
+  color: #ff6b6b;
+  background: rgba(255, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
